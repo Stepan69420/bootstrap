@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple Product Showcase</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/_custom.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/apple-logo.png" alt="apple"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminModal">
+                        Admin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Admin Section</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <a class="nav-link text-white" href="admin.html">Login</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="welcome-info d-flex align-items-center">
+        <div class="container text-center text-light">
+            <h1 class="m-5">Experience Apple Innovations</h1>
+            <p>The most exciting technology ever</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container px-4 text-center">
+            <h2 class="text-purple text-center m-5">Our Products</h2>
+            <div class="row gx-5 gy-5">
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/iphone.jpg" class="card-img-top" alt="iPhone">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone</h5>
+                            <p class="card-text">The newest smartphone at an affordable price.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalIphone">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/imac.jpg" class="card-img-top" alt="iMac">
+                        <div class="card-body">
+                            <h5 class="card-title">iMac</h5>
+                            <p class="card-text">Powerful all-in-one computer with.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalImac">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="images/macbook.jpg" class="card-img-top" alt="MacBook">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook</h5>
+                            <p class="card-text">Very good laptop.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalMacbook">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="productModalIphone" tabindex="-1" aria-labelledby="productModalIphoneLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalIphoneLabel">iPhone Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/iphone.jpg" alt="iPhone" class="img-fluid mb-3">
+                    <p><strong>Description:</strong> The latest smartphone with a powerful processor, revolutionary camera, and elegant design.</p>
+                    <p><strong>Price:</strong> $1,099 USD</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="productModalImac" tabindex="-1" aria-labelledby="productModalImacLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalImacLabel">iMac Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/imac.jpg" alt="iMac" class="img-fluid mb-3">
+                    <p><strong>Description:</strong> Enjoy speed, performance, and unrivaled picture quality on a 24" Retina display.</p>
+                    <p><strong>Price:</strong> $1,699 USD</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="productModalMacbook" tabindex="-1" aria-labelledby="productModalMacbookLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalMacbookLabel">MacBook Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/macbook.jpg" alt="MacBook" class="img-fluid mb-3">
+                    <p><strong>Description:</strong> MacBook offers top-notch performance with a premium design. Ideal for professional use.</p>
+                    <p><strong>Price:</strong> $2,099 USD</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
