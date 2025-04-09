@@ -22,7 +22,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#produkty">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="review.html">Review</a>
@@ -82,7 +82,7 @@
 
     <section>
         <div class="container px-4 text-center">
-            <h2 class="text-purple text-center m-5">Our Products</h2>
+            <h2 class="text-purple text-center m-5" id="produkty">Our Products</h2>
             <div class="row gx-5 gy-5">
 
                 <div class="col-lg-4">
@@ -91,7 +91,8 @@
                         <div class="card-body">
                             <h5 class="card-title">iPhone</h5>
                             <p class="card-text">The newest smartphone at an affordable price.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalIphone">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#productModalIphone">
                                 View Details
                             </button>
                         </div>
@@ -104,7 +105,8 @@
                         <div class="card-body">
                             <h5 class="card-title">iMac</h5>
                             <p class="card-text">Powerful all-in-one computer with.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalImac">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#productModalImac">
                                 View Details
                             </button>
                         </div>
@@ -117,7 +119,8 @@
                         <div class="card-body">
                             <h5 class="card-title">MacBook</h5>
                             <p class="card-text">Very good laptop.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModalMacbook">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#productModalMacbook">
                                 View Details
                             </button>
                         </div>
@@ -129,7 +132,8 @@
     </section>
 
 
-    <div class="modal fade" id="productModalIphone" tabindex="-1" aria-labelledby="productModalIphoneLabel" aria-hidden="true">
+    <div class="modal fade" id="productModalIphone" tabindex="-1" aria-labelledby="productModalIphoneLabel"
+         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -138,7 +142,8 @@
                 </div>
                 <div class="modal-body">
                     <img src="images/iphone.jpg" alt="iPhone" class="img-fluid mb-3">
-                    <p><strong>Description:</strong> The latest smartphone with a powerful processor, revolutionary camera, and elegant design.</p>
+                    <p><strong>Description:</strong> The latest smartphone with a powerful processor, revolutionary
+                        camera, and elegant design.</p>
                     <p><strong>Price:</strong> $1,099 USD</p>
                 </div>
                 <div class="modal-footer">
@@ -149,7 +154,8 @@
     </div>
 
 
-    <div class="modal fade" id="productModalImac" tabindex="-1" aria-labelledby="productModalImacLabel" aria-hidden="true">
+    <div class="modal fade" id="productModalImac" tabindex="-1" aria-labelledby="productModalImacLabel"
+         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -158,7 +164,8 @@
                 </div>
                 <div class="modal-body">
                     <img src="images/imac.jpg" alt="iMac" class="img-fluid mb-3">
-                    <p><strong>Description:</strong> Enjoy speed, performance, and unrivaled picture quality on a 24" Retina display.</p>
+                    <p><strong>Description:</strong> Enjoy speed, performance, and unrivaled picture quality on a 24"
+                        Retina display.</p>
                     <p><strong>Price:</strong> $1,699 USD</p>
                 </div>
                 <div class="modal-footer">
@@ -169,7 +176,8 @@
     </div>
 
 
-    <div class="modal fade" id="productModalMacbook" tabindex="-1" aria-labelledby="productModalMacbookLabel" aria-hidden="true">
+    <div class="modal fade" id="productModalMacbook" tabindex="-1" aria-labelledby="productModalMacbookLabel"
+         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -178,7 +186,8 @@
                 </div>
                 <div class="modal-body">
                     <img src="images/macbook.jpg" alt="MacBook" class="img-fluid mb-3">
-                    <p><strong>Description:</strong> MacBook offers top-notch performance with a premium design. Ideal for professional use.</p>
+                    <p><strong>Description:</strong> MacBook offers top-notch performance with a premium design. Ideal
+                        for professional use.</p>
                     <p><strong>Price:</strong> $2,099 USD</p>
                 </div>
                 <div class="modal-footer">
@@ -187,6 +196,10 @@
             </div>
         </div>
     </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">© 2025 Štěpán Javora</p>
+    </footer>
 
 </main>
 <script src="js/bootstrap.bundle.js"></script>
